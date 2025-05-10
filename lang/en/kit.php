@@ -12,4 +12,5 @@ return [
     'register' => 'Register',
     'login_register_message' => 'Don’t have an account yet?',
     'register_create_account' => 'Create Account',
+    'register_already_registered' => 'Already registered?',
 ];
