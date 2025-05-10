@@ -7,4 +7,5 @@ return [
     'remember_me' => 'Remember me',
     'forget_password' => 'Forget password',
     'register' => 'Register',
+    'login_register_message' => 'Don’t have an account yet?',
 ];

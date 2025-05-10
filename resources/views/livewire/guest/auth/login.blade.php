@@ -4,11 +4,13 @@
     </h1>
     <form class="space-y-4 md:space-y-6" wire:submit="login" >
         <x-input
+            required
             wire:model="email"
             label="{{ __('kit.email') }}"
             placeholder="{{ __('kit.email') }}"
         />
         <x-password
+            required
             wire:model="password"
             label="{{ __('kit.password') }}"
             placeholder="{{ __('kit.password') }}"
@@ -17,17 +19,17 @@
         <div class="flex items-center justify-between">
             <div class="flex items-start">
                 <div class="flex items-center h-5">
-                    <input id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required="">
+                    <input wire:model="remember" id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required="">
                 </div>
                 <div class="ml-3 text-sm">
                     <label for="remember" class="text-gray-500 dark:text-gray-300">{{ __('kit.remember_me') }}</label>
                 </div>
             </div>
-            <a href="#" class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">{{ __('kit.forget_password') }}</a>
+            <a href="{{ route('guest.auth.forget-password') }}" class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">{{ __('kit.forget_password') }}</a>
         </div>
-        <x-button primary label="{{ __('kit.login') }}" />
+        <x-button full primary type="submit" label="{{ __('kit.login') }}" />
         <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-            Don’t have an account yet? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">{{ __('kit.register') }}</a>
+            {{ __('kit.login_register_message') }} <a href="{{ route('guest.auth.register') }}" class="font-medium text-primary-600 hover:underline dark:text-primary-500">{{ __('kit.register') }}</a>
         </p>
     </form>
 </div>
