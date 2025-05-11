@@ -14,7 +14,7 @@ class Register extends Component
 {
     public string $first_name = '';
     public string $last_name = '';
-    public string $email = '';
+    public string $username = '';
     public string $password = '';
     public string $password_confirmation = '';
     /**
@@ -25,7 +25,7 @@ class Register extends Component
         $validated = $this->validate([
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:' . User::class],
+            'username' => ['required', 'string', 'lowercase', 'max:255', 'unique:' . User::class],
             'password' => ['required', 'string', 'confirmed', Rules\Password::defaults()],
         ]);
 
