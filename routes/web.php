@@ -12,3 +12,9 @@ Route::get('/guest/auth/forget-password', \App\Livewire\Guest\Auth\ForgetPasswor
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+// User Panel
+Route::middleware(['auth'])->group(function () {
+    Route::get('/user/dashboard/index', App\Livewire\User\Dashboard\Index::class)->name('user.dashboard.index');
+});
