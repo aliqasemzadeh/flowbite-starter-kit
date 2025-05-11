@@ -6,6 +6,7 @@ return [
     'first_name' => 'First Name',
     'last_name' => 'Last Name',
     'password' => 'Password',
+    'password_confirmation' => 'Password confirmation',
     'login' => 'Login',
     'login_to_your_account' => 'Login to your account',
     'remember_me' => 'Remember me',

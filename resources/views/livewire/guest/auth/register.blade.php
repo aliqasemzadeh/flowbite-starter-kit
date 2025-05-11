@@ -3,6 +3,13 @@
         {{ __('kit.register_create_account') }}
     </h1>
     <form class="space-y-4 md:space-y-6" wire:submit="register" >
+        <x-input
+            required
+            wire:model="username"
+            label="{{ __('kit.username') }}"
+            placeholder="{{ __('kit.username') }}"
+        />
+
         <div class="flex flex-row space-x-2">
         <x-input
             required
@@ -16,19 +23,24 @@
             label="{{ __('kit.last_name') }}"
             placeholder="{{ __('kit.last_name') }}"
         />
+
+
+            <x-password
+                required
+                wire:model="password"
+                label="{{ __('kit.password') }}"
+                placeholder="{{ __('kit.password') }}"
+            />
+
+
+            <x-password
+                required
+                wire:model="password_confirmation"
+                label="{{ __('kit.password_confirmation') }}"
+                placeholder="{{ __('kit.password_confirmation') }}"
+            />
         </div>
-        <x-input
-            required
-            wire:model="username"
-            label="{{ __('kit.username') }}"
-            placeholder="{{ __('kit.username') }}"
-        />
-        <x-password
-            required
-            wire:model="password"
-            label="{{ __('kit.password') }}"
-            placeholder="{{ __('kit.password') }}"
-        />
+
         <x-button full primary type="submit" label="{{ __('kit.register') }}" />
         <p class="text-sm font-light text-gray-500 dark:text-gray-400">
             {{ __('kit.register_already_registered') }} <a href="{{ route('guest.auth.login') }}" class="font-medium text-primary-600 hover:underline dark:text-primary-500">{{ __('kit.login') }}</a>
