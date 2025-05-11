@@ -19,9 +19,9 @@
         </div>
         <x-input
             required
-            wire:model="email"
-            label="{{ __('kit.email') }}"
-            placeholder="{{ __('kit.email') }}"
+            wire:model="username"
+            label="{{ __('kit.username') }}"
+            placeholder="{{ __('kit.username') }}"
         />
         <x-password
             required
