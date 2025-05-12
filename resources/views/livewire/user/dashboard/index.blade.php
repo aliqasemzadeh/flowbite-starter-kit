@@ -37,12 +37,8 @@
                     <span class="sr-only">Toggle sidebar</span>
                 </button>
                 <a href="{{ route('home') }}" class="flex items-center justify-between mr-4">
-                    <img
-                        src="{{ asset('images/logo.svg') }}"
-                        class="mr-3 h-8"
-                        alt="Flowbite Logo"
-                    />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                    <x-logo />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">{{ config('app.name') }}</span>
                 </a>
                 <form action="#" method="GET" class="hidden md:block md:pl-2">
                     <label for="topbar-search" class="sr-only">Search</label>
@@ -311,7 +307,7 @@
                             <div class="flex-shrink-0">
                                 <img
                                     class="w-11 h-11 rounded-full"
-                                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/robert-brown.png"
+                                    src="{{ asset('images/avatars/robert-brown.png') }}"
                                     alt="Robert image"
                                 />
                                 <div
@@ -600,7 +596,7 @@
                     <span class="sr-only">Open user menu</span>
                     <img
                         class="w-8 h-8 rounded-full"
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gough.png"
+                        src="{{ asset('images/avatars/michael-gough.png') }}"
                         alt="user photo"
                     />
                 </button>
@@ -616,7 +612,7 @@
               >
                         <span
                             class="block text-sm text-gray-900 truncate dark:text-white"
-                        >name@flowbite.com</span
+                        >name@{{ strtolower(config('app.name')) }}.com</span
                         >
                     </div>
                     <ul
