@@ -5,9 +5,10 @@
     <form class="space-y-4 md:space-y-6" wire:submit="login" >
         <x-input
             required
-            wire:model="username"
-            label="{{ __('kit.username') }}"
-            placeholder="{{ __('kit.username') }}"
+            type="email"
+            wire:model="email"
+            label="{{ __('kit.email') }}"
+            placeholder="{{ __('kit.email') }}"
         />
         <x-password
             required
