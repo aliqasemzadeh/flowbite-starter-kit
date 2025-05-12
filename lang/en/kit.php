@@ -16,4 +16,7 @@ return [
     'login_register_message' => 'Don’t have an account yet?',
     'register_create_account' => 'Create Account',
     'register_already_registered' => 'Already registered?',
+    'reset_password' => 'Reset password',
+    'confirm_password' => 'Confirm Password',
+    'confirm_password_message' => 'This is a secure area of the application. Please confirm your password before continuing.',
 ];
