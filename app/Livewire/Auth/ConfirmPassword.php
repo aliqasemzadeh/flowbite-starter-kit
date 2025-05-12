@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Guest\Auth;
+namespace App\Livewire\Auth;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
@@ -37,6 +37,6 @@ class ConfirmPassword extends Component
     #[Layout('components.layouts.guest')]
     public function render()
     {
-        return view('livewire.guest.auth.confirm-password');
+        return view('livewire.auth.confirm-password');
     }
 }

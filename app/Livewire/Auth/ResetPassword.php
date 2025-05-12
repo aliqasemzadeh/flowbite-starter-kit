@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Guest\Auth;
+namespace App\Livewire\Auth;
 
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Support\Facades\Hash;
@@ -67,12 +67,12 @@ class ResetPassword extends Component
 
         Session::flash('status', __($status));
 
-        $this->redirectRoute('guest.auth.login', navigate: true);
+        $this->redirectRoute('login', navigate: true);
     }
 
     #[layout('components.layouts.guest')]
     public function render()
     {
-        return view('livewire.guest.auth.reset-password');
+        return view('livewire.auth.reset-password');
     }
 }

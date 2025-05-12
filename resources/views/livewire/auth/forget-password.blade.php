@@ -16,10 +16,10 @@
 
         <x-button full primary type="submit" label="{{ __('Email password reset link') }}" />
         <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-            {{ __('kit.login_register_message') }} <a href="{{ route('guest.auth.register') }}" class="font-medium text-primary-600 hover:underline dark:text-primary-500">{{ __('kit.register') }}</a>
+            {{ __('kit.login_register_message') }} <a href="{{ route('register') }}" class="font-medium text-primary-600 hover:underline dark:text-primary-500">{{ __('kit.register') }}</a>
         </p>
         <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-            {{ __('kit.register_already_registered') }} <a href="{{ route('guest.auth.login') }}"
+            {{ __('kit.register_already_registered') }} <a href="{{ route('login') }}"
                                                            class="font-medium text-primary-600 hover:underline dark:text-primary-500">{{ __('kit.login') }}</a>
         </p>
     </form>

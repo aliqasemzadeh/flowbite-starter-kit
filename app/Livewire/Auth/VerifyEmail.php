@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Guest\Auth;
+namespace App\Livewire\Auth;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
@@ -38,6 +38,6 @@ class VerifyEmail extends Component
     #[Layout('components.layouts.guest')]
     public function render()
     {
-        return view('livewire.guest.auth.verify-email');
+        return view('livewire.auth.verify-email');
     }
 }

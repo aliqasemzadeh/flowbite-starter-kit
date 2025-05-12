@@ -26,11 +26,11 @@
                     <label for="remember" class="text-gray-500 dark:text-gray-300">{{ __('kit.remember_me') }}</label>
                 </div>
             </div>
-            <a href="{{ route('guest.auth.forget-password') }}" class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">{{ __('kit.forget_password') }}</a>
+            <a href="{{ route('forget-password') }}" class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">{{ __('kit.forget_password') }}</a>
         </div>
         <x-button full primary type="submit" label="{{ __('kit.login') }}" />
         <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-            {{ __('kit.login_register_message') }} <a href="{{ route('guest.auth.register') }}" class="font-medium text-primary-600 hover:underline dark:text-primary-500">{{ __('kit.register') }}</a>
+            {{ __('kit.login_register_message') }} <a href="{{ route('register') }}" class="font-medium text-primary-600 hover:underline dark:text-primary-500">{{ __('kit.register') }}</a>
         </p>
     </form>
 </div>
