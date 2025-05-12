@@ -2,7 +2,7 @@
     <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
         {{ __('kit.forget_password') }}
     </h1>
-    <form class="space-y-4 md:space-y-6" wire:submit="login" >
+    <form class="space-y-4 md:space-y-6" wire:submit="sendPasswordResetLink" >
         <x-input
             required
             type="email"

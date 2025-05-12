@@ -34,7 +34,7 @@ class ConfirmPassword extends Component
         $this->redirectIntended(default: route('user.dashboard.index', absolute: false), navigate: true);
     }
 
-    #[Layout('components.layouts.guest')]
+    #[Layout('components.layouts.auth')]
     public function render()
     {
         return view('livewire.auth.confirm-password');

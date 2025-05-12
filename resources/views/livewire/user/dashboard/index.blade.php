@@ -36,9 +36,9 @@
                     </svg>
                     <span class="sr-only">Toggle sidebar</span>
                 </button>
-                <a href="https://flowbite.com" class="flex items-center justify-between mr-4">
+                <a href="{{ route('home') }}" class="flex items-center justify-between mr-4">
                     <img
-                        src="https://flowbite.s3.amazonaws.com/logo.svg"
+                        src="{{ asset('images/logo.svg') }}"
                         class="mr-3 h-8"
                         alt="Flowbite Logo"
                     />
@@ -123,7 +123,7 @@
                             <div class="flex-shrink-0">
                                 <img
                                     class="w-11 h-11 rounded-full"
-                                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+                                    src="{{ asset('images/avatars/bonnie-green.png') }}"
                                     alt="Bonnie Green avatar"
                                 />
                                 <div
@@ -168,7 +168,7 @@
                             <div class="flex-shrink-0">
                                 <img
                                     class="w-11 h-11 rounded-full"
-                                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+                                    src="{{ asset('images/avatars/jese-leos.png') }}"
                                     alt="Jese Leos avatar"
                                 />
                                 <div
@@ -214,7 +214,7 @@
                             <div class="flex-shrink-0">
                                 <img
                                     class="w-11 h-11 rounded-full"
-                                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+                                    src="{{ asset('images/avatars/joseph-mcfall.png') }}"
                                     alt="Joseph McFall avatar"
                                 />
                                 <div
@@ -262,7 +262,7 @@
                             <div class="flex-shrink-0">
                                 <img
                                     class="w-11 h-11 rounded-full"
-                                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
+                                    src="{{ asset('images/avatars/roberta-casas.png') }}"
                                     alt="Roberta Casas image"
                                 />
                                 <div

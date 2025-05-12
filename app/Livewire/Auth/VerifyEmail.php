@@ -35,7 +35,7 @@ class VerifyEmail extends Component
         $this->redirect('/', navigate: true);
     }
 
-    #[Layout('components.layouts.guest')]
+    #[Layout('components.layouts.auth')]
     public function render()
     {
         return view('livewire.auth.verify-email');

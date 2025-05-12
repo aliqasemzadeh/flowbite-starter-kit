@@ -7,7 +7,7 @@ use App\Http\Controllers\Auth\VerifyEmailController;
 Route::get('/login', \App\Livewire\Auth\Login::class)->name('login');
 Route::get('/register', \App\Livewire\Auth\Register::class)->name('register');
 Route::get('/forget-password', \App\Livewire\Auth\ForgetPassword::class)->name('forget-password');
-Route::get('/reset-password/{token}', \App\Livewire\Auth\ResetPassword::class)->name('reset-password');
+Route::get('/reset-password/{token}', \App\Livewire\Auth\ResetPassword::class)->name('password.reset');
 Route::post('/logout', \App\Livewire\Auth\Logout::class)->name('logout');
 
 Route::middleware('auth')->group(function () {
