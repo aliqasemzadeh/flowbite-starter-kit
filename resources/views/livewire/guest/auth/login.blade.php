@@ -7,7 +7,7 @@
             required
             type="email"
             wire:model="email"
-            label="{{ __('kit.email') }}"
+            label="{{ __('kit.email_address') }}"
             placeholder="{{ __('kit.email') }}"
         />
         <x-password
