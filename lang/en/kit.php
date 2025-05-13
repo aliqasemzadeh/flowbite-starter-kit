@@ -19,7 +19,10 @@ return [
     'reset_password' => 'Reset password',
     'confirm_password' => 'Confirm Password',
     'confirm_password_message' => 'This is a secure area of the application. Please confirm your password before continuing.',
-    'change_information' => 'Change Information',
+    'profile' => 'profile',
     'change_password' => 'Change Password',
     'delete_account' => 'Delete Account',
+    'system_message' => 'System Message',
+    'saved' => 'Saved.',
+    'update' => 'Update',
 ];
