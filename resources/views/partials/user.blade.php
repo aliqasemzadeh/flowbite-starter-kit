@@ -550,23 +550,16 @@
         >
             <li>
                 <a
-                    href="{{ route('user.profile.change-information') }}"
+                    href="{{ route('user.settings.profile') }}"
                     class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
                 >{{ __('kit.profile_information') }}</a
                 >
             </li>
             <li>
                 <a
-                    href="{{ route('user.profile.change-password') }}"
+                    href="{{ route('user.settings.password') }}"
                     class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
                 >{{ __('kit.change_password') }}</a
-                >
-            </li>
-            <li>
-                <a
-                    href="{{ route('user.profile.delete-account') }}"
-                    class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
-                >{{ __('kit.delete_account') }}</a
                 >
             </li>
         </ul>
