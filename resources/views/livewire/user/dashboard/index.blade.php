@@ -1,3 +1,3 @@
-<x-layouts.panel :title="$title ?? null">
+<div>
     Goood
-</x-layouts.panel>
+</div>
