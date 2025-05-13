@@ -84,6 +84,13 @@ class Profile extends Component
         ]);
     }
 
+    public function deleteAccountDialog(): void
+    {
+        $this->dialog()->id('delete-account-dialog')->show([
+            'icon' => 'question',
+        ]);
+    }
+
     #[Layout('components.layouts.panel')]
     public function render()
     {
