@@ -6,9 +6,11 @@ use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Session;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
+use WireUi\Traits\WireUiActions;
 
 class ForgetPassword extends Component
 {
+    use WireUiActions;
     public string $email = '';
 
     /**
@@ -22,7 +24,12 @@ class ForgetPassword extends Component
 
         Password::sendResetLink($this->only('email'));
 
-        Session::flash('status', __('A reset link will be sent if the account exists.'));
+        $this->notification()->send([
+            'icon' => 'info',
+            'title' => __('Password Reset'),
+            'description' => __('A reset link will be sent if the account exists.'),
+        ]);
+
     }
 
     #[Layout('components.layouts.auth')]

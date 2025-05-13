@@ -11,9 +11,11 @@ use Illuminate\Validation\Rules;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Locked;
 use Livewire\Component;
+use WireUi\Traits\WireUiActions;
 
 class ResetPassword extends Component
 {
+    use WireUiActions;
     #[Locked]
     public string $token = '';
     public string $email = '';
@@ -65,7 +67,11 @@ class ResetPassword extends Component
             return;
         }
 
-        Session::flash('status', __($status));
+        $this->notification()->send([
+            'icon' => 'info',
+            'title' => __('Password Reset'),
+            'description' => __($status),
+        ]);
 
         $this->redirectRoute('login', navigate: true);
     }

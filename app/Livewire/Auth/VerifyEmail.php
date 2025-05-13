@@ -6,9 +6,11 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
+use WireUi\Traits\WireUiActions;
 
 class VerifyEmail extends Component
 {
+    use WireUiActions;
     /**
      * Send an email verification notification to the user.
      */
@@ -22,7 +24,11 @@ class VerifyEmail extends Component
 
         Auth::user()->sendEmailVerificationNotification();
 
-        Session::flash('status', 'verification-link-sent');
+        $this->notification()->send([
+            'icon' => 'info',
+            'title' => __('Verification Email Sent'),
+            'description' => __('A new verification link has been sent to the email address you provided during registration.'),
+        ]);
     }
 
     /**
