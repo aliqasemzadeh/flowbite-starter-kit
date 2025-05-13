@@ -46,4 +46,27 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    /**
+     * Get the user's full name.
+     *
+     * @return string
+     */
+    public function getNameAttribute(): string
+    {
+        return $this->first_name . ' ' . $this->last_name;
+    }
+
+    /**
+     * Set the user's name.
+     *
+     * @param string $value
+     * @return void
+     */
+    public function setNameAttribute(string $value): void
+    {
+        $parts = explode(' ', $value, 2);
+        $this->attributes['first_name'] = $parts[0];
+        $this->attributes['last_name'] = $parts[1] ?? '';
+    }
 }
