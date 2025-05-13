@@ -26,11 +26,11 @@
                     placeholder="{{ __('kit.email') }}"
                 />
 
-                <x-button full primary type="submit" label="{{ __('kit.update') }}"/>
+                <x-button primary type="submit" label="{{ __('kit.update') }}"/>
         </form>
     </div>
 
-    <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 mt-6">
         <h5 class="text-xl font-medium text-gray-900 dark:text-white">{{ __('kit.delete_account') }}</h5>
         <x-button wire:click="deleteAccountDialog" negative label="{{ __('kit.delete_account') }}" />
     </div>
