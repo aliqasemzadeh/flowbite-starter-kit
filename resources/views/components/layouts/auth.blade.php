@@ -18,6 +18,6 @@
         </div>
     </div>
 </section>
-@livewireScripts
+@include('partials.foot')
 </body>
 </html>

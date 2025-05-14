@@ -22,7 +22,11 @@ return [
     'profile' => 'Profile',
     'change_password' => 'Change Password',
     'delete_account' => 'Delete Account',
+    'delete_account_confirmation' => 'Are you sure you want to delete your account? Once your account is deleted, all of its resources and data will be permanently deleted.',
+    'delete_account_enter_password' => 'Please enter your password to confirm you would like to permanently delete your account.',
     'system_message' => 'System Message',
     'saved' => 'Saved.',
     'update' => 'Update',
+    'cancel' => 'Cancel',
+    'delete' => 'Delete',
 ];

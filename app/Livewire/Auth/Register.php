@@ -35,7 +35,7 @@ class Register extends Component
 
         Auth::login($user);
 
-        $this->redirectIntended(route('user.dashboard.index', absolute: false), navigate: true);
+        $this->redirectIntended(route('user.dashboard.index', absolute: false), navigate: false);
     }
 
     #[Layout('components.layouts.auth')]

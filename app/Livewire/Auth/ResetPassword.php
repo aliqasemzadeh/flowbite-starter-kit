@@ -73,7 +73,7 @@ class ResetPassword extends Component
             'description' => __($status),
         ]);
 
-        $this->redirectRoute('login', navigate: true);
+        $this->redirectRoute('login', navigate: false);
     }
 
     #[layout('components.layouts.auth')]

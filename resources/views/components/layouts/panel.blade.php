@@ -3,8 +3,9 @@
 <head>
     @include('partials.head')
 </head>
-<body>
-<x-notifications position="bottom-end" />
+<body class="bg-gray-50 dark:bg-gray-900">
+<x-dialog />
+<x-notifications />
 <div class="antialiased bg-gray-50 dark:bg-gray-900">
     <nav class="bg-white border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50">
         <div class="flex flex-wrap justify-between items-center">
@@ -43,13 +44,9 @@
                     </svg>
                     <span class="sr-only">Toggle sidebar</span>
                 </button>
-                <a href="https://flowbite.com" class="flex items-center justify-between mr-4">
-                    <img
-                        src="https://flowbite.s3.amazonaws.com/logo.svg"
-                        class="mr-3 h-8"
-                        alt="Flowbite Logo"
-                    />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                <a href="{{ route('home') }}" class="flex items-center justify-between mr-4">
+                    <x-logo />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">{{ config('app.name') }}</span>
                 </a>
                 <form action="#" method="GET" class="hidden md:block md:pl-2">
                     <label for="topbar-search" class="sr-only">Search</label>
@@ -669,6 +666,6 @@
         {{ $slot }}
     </main>
 </div>
-    @livewireScripts
+    @include('partials.foot')
 </body>
 </html>

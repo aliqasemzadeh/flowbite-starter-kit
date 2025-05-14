@@ -2,9 +2,11 @@
 
 namespace App\Livewire\User\Settings;
 
+use App\Livewire\Auth\Logout;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;
+use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
 use WireUi\Traits\WireUiActions;
@@ -15,6 +17,7 @@ class Profile extends Component
     public string $first_name = '';
     public string $last_name = '';
     public string $email = '';
+    public string $password = '';
 
     /**
      * Mount the component.
@@ -84,11 +87,21 @@ class Profile extends Component
         ]);
     }
 
-    public function deleteAccountDialog(): void
+    public function closeDialog(): void
     {
-        $this->dialog()->id('delete-account-dialog')->show([
-            'icon' => 'question',
+        $this->reset('password');
+        $this->dialog()->close();
+    }
+
+    public function deleteUser(Logout $logout): void
+    {
+        $this->validate([
+            'password' => ['required', 'string', 'current_password'],
         ]);
+
+        tap(Auth::user(), $logout(...))->delete();
+
+        $this->redirect('/', navigate: true);
     }
 
     #[Layout('components.layouts.panel')]
