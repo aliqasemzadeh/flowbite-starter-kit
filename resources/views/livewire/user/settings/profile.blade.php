@@ -58,13 +58,6 @@
                 </x-card>
             </form>
         </x-modal>
-        <x-button warning label="Delete"
-                  x-on:confirm="{
-    title: 'Sure Delete?',
-    icon: 'warning',
-    method: 'delete',
-    params: 1
-}" />
     </div>
 
 </div>
