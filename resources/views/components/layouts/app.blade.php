@@ -4,8 +4,8 @@
     @include('partials.head')
 </head>
 <body class="bg-gray-50 dark:bg-gray-900">
-<x-notifications />
-<x-dialog />
+    <x-notifications />
+    <x-dialog />
     <!-- Navigation Bar -->
     <header>
         <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
