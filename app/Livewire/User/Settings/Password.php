@@ -39,7 +39,7 @@ class Password extends Component
         $this->notification()->send([
             'icon' => 'info',
             'title' => __('Password Updated'),
-            'description' => __('A new verification link has been sent to the email address you provided during registration.'),
+            'description' => __('You should use new password to login website.'),
         ]);
     }
     #[Layout('components.layouts.panel')]
