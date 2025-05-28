@@ -15,11 +15,15 @@
         <!-- Modal content -->
         <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
             <!-- Modal header -->
-            {{ $header }}
+            @isset($header)
+                {{ $header }}
+            @endisset
             <!-- Modal body -->
             {{ $slot }}
             <!-- Modal footer -->
-            {{ $footer }}
+            @isset($footer)
+                {{ $footer }}
+            @endisset
         </div>
     </div>
 </div>
