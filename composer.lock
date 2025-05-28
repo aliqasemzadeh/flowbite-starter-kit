@@ -4,8 +4,62 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0ca52dd0290b44f09d1d98c84abc0973",
+    "content-hash": "76acc31bc2a70f7e9e2db1c3a1cbb3b0",
     "packages": [
+        {
+            "name": "aliqasemzadeh/livewire-jalali-date-picker",
+            "version": "0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aliqasemzadeh/LivewireJalaliDatePicker.git",
+                "reference": "066d0047ae9a713fbd2a28389ad85acc3d5900cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aliqasemzadeh/LivewireJalaliDatePicker/zipball/066d0047ae9a713fbd2a28389ad85acc3d5900cb",
+                "reference": "066d0047ae9a713fbd2a28389ad85acc3d5900cb",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0",
+                "livewire/livewire": "^2.0|^3.0",
+                "nesbot/carbon": "^2.0|^3.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^9.0|^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Aliqasemzadeh\\LivewireJalaliDatePicker\\LivewireJalaliDatePickerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aliqasemzadeh\\LivewireJalaliDatePicker\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ali Qasemzadeh",
+                    "email": "ali.qasemzadeh@gmail.com"
+                }
+            ],
+            "description": "A Livewire component for Jalali (Persian) date picker with AlpineJS",
+            "support": {
+                "issues": "https://github.com/aliqasemzadeh/LivewireJalaliDatePicker/issues",
+                "source": "https://github.com/aliqasemzadeh/LivewireJalaliDatePicker/tree/0.4.0"
+            },
+            "time": "2025-05-28T09:56:38+00:00"
+        },
         {
             "name": "archtechx/enums",
             "version": "v1.1.1",

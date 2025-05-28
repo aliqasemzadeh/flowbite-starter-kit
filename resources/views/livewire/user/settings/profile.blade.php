@@ -33,8 +33,8 @@
 
     <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 mt-6">
         <h5 class="text-xl font-medium text-gray-900 dark:text-white">{{ __('kit.delete_account') }}</h5>
-        <x-button label="{{ __('kit.delete') }}" x-on:click="$openModal('deleteAccountDialog')" negative />
-        <x-modal name="deleteAccountDialog" bordered>
+        <x-button label="{{ __('kit.delete') }}" x-on:click="$openModal('deleteAccountDialogMain')" negative />
+        <x-modal name="deleteAccountDialogMain" bordered>
             <form wire:submit="deleteUser" class="space-y-6">
                 <x-card title="{{ __('kit.delete_account') }}" class="w-full">
                         <x-password

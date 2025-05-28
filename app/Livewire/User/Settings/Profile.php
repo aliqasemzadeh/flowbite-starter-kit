@@ -18,6 +18,7 @@ class Profile extends Component
     public string $last_name = '';
     public string $email = '';
     public string $password = '';
+    public $date;
 
     /**
      * Mount the component.
