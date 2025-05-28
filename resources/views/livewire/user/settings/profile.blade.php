@@ -26,6 +26,23 @@
                     placeholder="{{ __('kit.email') }}"
                 />
 
+            <x-flowbite.drawer title="hello world" position="left" id="my-drawer">
+                <x-input
+                    required
+                    type="email"
+                    wire:model="email"
+                    label="{{ __('kit.email_address') }}"
+                    placeholder="{{ __('kit.email') }}"
+                />
+            </x-flowbite.drawer>
+
+            <div class="text-center">
+                <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="my-drawer" data-drawer-show="my-drawer" aria-controls="my-drawer">
+                    Show drawer
+                </button>
+            </div>
+
+
 
                 <x-button primary type="submit" label="{{ __('kit.update') }}"/>
         </form>

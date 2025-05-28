@@ -20,6 +20,7 @@ Flowbite Starter Kit is a comprehensive boilerplate for Laravel applications tha
 - **Dark Mode Support**
 - **Localization Ready**
 - **Responsive Design**
+- **Documented Components** - See the [docs/components](docs/components) directory
 
 ## Technologies Used
 
