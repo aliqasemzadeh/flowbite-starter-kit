@@ -2,7 +2,7 @@
     <div class="flex mb-2 space-x-2 rtl:space-x-reverse">
         @for ($i = 1; $i <= $digits; $i++)
             <div>
-                <label for="code-{{ $i }}" class="sr-only">{{ $this->getOrdinal($i) }} code</label>
+                <label for="code-{{ $i }}" class="sr-only">{{ $i }}{{ $i == 1 ? 'st' : ($i == 2 ? 'nd' : ($i == 3 ? 'rd' : 'th')) }} code</label>
                 <input
                     type="text"
                     maxlength="1"
