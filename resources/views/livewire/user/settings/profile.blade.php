@@ -4,14 +4,14 @@
 
         <form class="space-y-4 md:space-y-6" wire:submit="updateProfileInformation">
 
-                <x-input
+            <x-flowbite.input
                     required
                     wire:model="first_name"
                     label="{{ __('kit.first_name') }}"
                     placeholder="{{ __('kit.first_name') }}"
                 />
 
-                <x-input
+                <x-flowbite.input
                     required
                     wire:model="last_name"
                     label="{{ __('kit.last_name') }}"
