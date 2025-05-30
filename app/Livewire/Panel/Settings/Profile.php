@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\User\Settings;
+namespace App\Livewire\Panel\Settings;
 
 use App\Livewire\Auth\Logout;
 use App\Models\User;

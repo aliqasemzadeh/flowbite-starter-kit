@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\User\Dashboard;
+namespace App\Livewire\Panel\Dashboard;
 
 use Livewire\Attributes\Layout;
 use Livewire\Component;
