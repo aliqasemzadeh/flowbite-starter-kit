@@ -14,6 +14,16 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/file-input-test', function () {
         return view('file-input-test');
     })->name('file-input-test');
+
+    // Test route for checkbox component
+    Route::get('/checkbox-demo', function () {
+        return view('examples.checkbox-demo');
+    })->name('checkbox-demo');
+
+    // Test route for pin code component
+    Route::get('/pin-code-example', function () {
+        return view('examples.pin-code-example');
+    })->name('pin-code-example');
 });
 
 require __DIR__.'/auth.php';

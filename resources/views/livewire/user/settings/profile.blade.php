@@ -18,7 +18,7 @@
                     placeholder="{{ __('kit.last_name') }}"
                 />
 
-                <x-input
+                <x-flowbite.input
                     required
                     type="email"
                     wire:model="email"
