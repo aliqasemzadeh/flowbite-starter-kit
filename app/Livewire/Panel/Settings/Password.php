@@ -45,6 +45,6 @@ class Password extends Component
     #[Layout('components.layouts.panel')]
     public function render()
     {
-        return view('livewire.user.settings.password');
+        return view('livewire.panel.settings.password');
     }
 }

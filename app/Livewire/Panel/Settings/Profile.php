@@ -107,6 +107,6 @@ class Profile extends Component
     #[Layout('components.layouts.panel')]
     public function render()
     {
-        return view('livewire.user.settings.profile');
+        return view('livewire.panel.settings.profile');
     }
 }
