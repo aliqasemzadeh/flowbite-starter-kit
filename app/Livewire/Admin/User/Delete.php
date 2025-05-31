@@ -14,7 +14,7 @@ class Delete extends ModalComponent
     public $password = '';
 
     protected $rules = [
-        'password' => 'required',
+        'password' => ['required', 'current_password'],
     ];
 
     public function mount($userId)
@@ -26,12 +26,6 @@ class Delete extends ModalComponent
     public function delete()
     {
         $this->validate();
-
-        // Check if the password matches the current user's password
-        if (!Hash::check($this->password, Auth::user()->password)) {
-            $this->addError('password', 'The password is incorrect.');
-            return;
-        }
 
         $this->user->delete();
         $this->dispatch('userDeleted');

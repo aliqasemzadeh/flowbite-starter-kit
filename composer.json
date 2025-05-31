@@ -16,7 +16,8 @@
         "livewire/livewire": "^3.6",
         "power-components/livewire-powergrid": "^6.3",
         "wire-elements/modal": "^3.0",
-        "wireui/wireui": "^2.4"
+        "wireui/wireui": "^2.4",
+        "aliqasemzadeh/flyout": "@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -80,5 +81,9 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [{
+        "type": "path",
+        "url": "flyout"
+    }]
 }

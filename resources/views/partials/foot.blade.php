@@ -2,3 +2,4 @@
 @livewireScripts
 @wireUiScripts
 @livewire('wire-elements-modal')
+@livewire('livewire-ui-flyout')
