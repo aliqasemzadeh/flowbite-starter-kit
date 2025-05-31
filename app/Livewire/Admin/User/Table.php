@@ -38,7 +38,7 @@ final class Table extends PowerGridComponent
             Button::add('create-user')
                 ->slot(__('Create User'))
                 ->class('text-white bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5')
-                ->dispatch('openFlyout', ['component' => 'admin.user.create']),
+                ->dispatch('openPanel', ['component' => 'admin.user.create']),
         ];
     }
 

@@ -4,71 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0a57b85f6892ab7407d02b5d7e4cae7",
+    "content-hash": "a19ddaddf4c31405d8d176b98ae4442f",
     "packages": [
-        {
-            "name": "aliqasemzadeh/flyout",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "flyout",
-                "reference": "40d0db11b997d8788845e7131dff054c0e831608"
-            },
-            "require": {
-                "livewire/livewire": "^3.2.3",
-                "php": "^8.1",
-                "spatie/laravel-package-tools": "^1.9"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^8.5",
-                "phpunit/phpunit": "^9.5"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "LivewireUI\\Flyout\\LivewireFlyoutServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "LivewireUI\\Flyout\\": "src"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "LivewireUI\\Flyout\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/phpunit"
-                ],
-                "test-coverage": [
-                    "vendor/bin/phpunit --coverage-html coverage"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Philo Hermans",
-                    "email": "me@philohermans.com"
-                }
-            ],
-            "description": "Laravel Livewire flyout/slideover component",
-            "keywords": [
-                "flyout",
-                "laravel",
-                "livewire",
-                "slideover"
-            ],
-            "transport-options": {
-                "relative": true
-            }
-        },
         {
             "name": "archtechx/enums",
             "version": "v1.1.1",
@@ -11289,9 +11226,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "aliqasemzadeh/flyout": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

@@ -5,7 +5,6 @@ namespace App\Livewire\Admin\User;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
-use LivewireUI\Flyout\FlyoutComponent;
 use LivewireUI\Modal\ModalComponent;
 
 class Create extends ModalComponent
