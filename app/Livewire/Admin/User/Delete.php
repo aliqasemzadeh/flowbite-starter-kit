@@ -3,8 +3,6 @@
 namespace App\Livewire\Admin\User;
 
 use App\Models\User;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
 use LivewireUI\Modal\ModalComponent;
 
 class Delete extends ModalComponent
