@@ -38,14 +38,8 @@ final class Table extends PowerGridComponent
             Button::add('create-user')
                 ->slot(__('Create User'))
                 ->class('text-white bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5')
-                ->dispatch('openPanel', ['component' => 'admin.user.create']),
+                ->dispatch('openModal', ['component' => 'admin.user.create']),
         ];
-    }
-
-    #[\Livewire\Attributes\On('openCreateModal')]
-    public function openCreateModal(): void
-    {
-        $this->dispatch('openModal', 'admin.user.create');
     }
 
     public function datasource(): Builder
@@ -98,12 +92,6 @@ final class Table extends PowerGridComponent
         ];
     }
 
-    #[\Livewire\Attributes\On('openEditModal')]
-    public function openEditModal($rowId): void
-    {
-        $this->dispatch('openModal', 'admin.user.edit', ['userId' => $rowId]);
-    }
-
     public function actions(User $row): array
     {
         return [
@@ -111,7 +99,7 @@ final class Table extends PowerGridComponent
                 ->slot('Edit')
                 ->id()
                 ->class('pg-btn-white dark:ring-pg-primary-600 dark:border-pg-primary-600 dark:hover:bg-pg-primary-700 dark:ring-offset-pg-primary-800 dark:text-pg-primary-300 dark:bg-pg-primary-700')
-                ->dispatch('openEditModal', ['rowId' => $row->id]),
+                ->dispatch('openModal' , ['component' =>'admin.user.edit', ['userId' => $row->id]]),
 
             Button::add('delete')
                 ->slot('Delete')
