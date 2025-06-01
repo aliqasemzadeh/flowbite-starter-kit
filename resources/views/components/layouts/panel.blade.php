@@ -3,10 +3,10 @@
 <head>
     @include('partials.head')
 </head>
-<body class="bg-gray-50 dark:bg-gray-900">
+<body class="bg-gray-50 dark:bg-gray-900 overflow-x-hidden">
     <x-dialog />
     <x-notifications />
-    <div class="antialiased bg-gray-50 dark:bg-gray-900">
+    <div class="antialiased bg-gray-50 dark:bg-gray-900 overflow-x-hidden">
         <nav class="bg-white border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50">
             <div class="flex flex-wrap justify-between items-center">
                 <div class="flex justify-start items-center">
@@ -141,8 +141,10 @@
             </div>
         </aside>
 
-        <main class="p-4 md:ml-64 h-auto pt-20">
-            {{ $slot }}
+        <main class="p-4 md:ml-64 h-auto pt-20 overflow-x-hidden">
+            <div class="w-full mx-auto">
+                {{ $slot }}
+            </div>
         </main>
     </div>
     @include('partials.foot')
